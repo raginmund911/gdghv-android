@@ -31,6 +31,15 @@
             android:enabled="true"
             android:exported="true" >
         </provider>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".BusinessListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.nitya.datahv.BusinessListActivity" />
+        </activity>
     </application>
 
 </manifest>
