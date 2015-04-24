@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-import io.github.nitya.datahv.dummy.DummyContent;
+import io.github.nitya.datahv.fixtures.DummyContent;
 
 /**
  * A list fragment representing a list of Businesses. This fragment

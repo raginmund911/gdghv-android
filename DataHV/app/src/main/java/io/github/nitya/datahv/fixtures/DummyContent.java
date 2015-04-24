@@ -1,4 +1,4 @@
-package io.github.nitya.datahv.dummy;
+package io.github.nitya.datahv.fixtures;
 
 import java.util.ArrayList;
 import java.util.HashMap;

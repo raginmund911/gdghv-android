@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import io.github.nitya.datahv.dummy.DummyContent;
+import io.github.nitya.datahv.fixtures.DummyContent;
 
 /**
  * A fragment representing a single Business detail screen.

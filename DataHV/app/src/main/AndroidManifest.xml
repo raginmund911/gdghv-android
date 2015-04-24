@@ -24,6 +24,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BusinessListActivity" />
         </activity>
+
+        <provider
+            android:name=".data.BusinessProvider"
+            android:authorities="io.github.nitya.datahv.business"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
     </application>
 
 </manifest>
