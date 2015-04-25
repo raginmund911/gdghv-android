@@ -29,18 +29,18 @@ public class DummyContent {
     }
 
     //=================================================================
-    /* Concrete Dummy Item of type County */
+    /* Concrete Dummy Item of type BusinessContract */
     //=================================================================
     public static class DummyCounty extends DummyItem {
 
         /*
         Keep everything as String for simplicity - this way we can grab CSV for data and populate directly
-        County      : Albany,
-        County Seat : City of Albany,
+        BusinessContract      : Albany,
+        BusinessContract Seat : City of Albany,
         Address     : 112 State Street,
         City        : Albany,
         Zip5        : 12207,
-        ContactType : County Executive's Office,
+        ContactType : BusinessContract Executive's Office,
         Phone       : (518)447-7040,
         Longitude   : -73.753959,
         Latitude    : 42.650164,
@@ -52,23 +52,23 @@ public class DummyContent {
         We'll ignore the Location attribute for now..
         */
        static String[] data = new String[]{
-               "Albany,City of Albany,112 State Street,Albany,12207,County Executive's Office,(518)447-7040,-73.753959,42.650164,http://www.albanycounty.com/",
-               "Allegany,Village of Belmont,7 Court St.,Belmont,14813,County Administrator's Office,(585)268-9217,-78.033207,42.224868 ,http://www.alleganyco.com/",
+               "Albany,City of Albany,112 State Street,Albany,12207,BusinessContract Executive's Office,(518)447-7040,-73.753959,42.650164,http://www.albanycounty.com/",
+               "Allegany,Village of Belmont,7 Court St.,Belmont,14813,BusinessContract Administrator's Office,(585)268-9217,-78.033207,42.224868 ,http://www.alleganyco.com/",
                "Bronx,Borough of the Bronx,851 Grand Concourse,New York,10451,Borough President's Office,(718)590-3500,-73.923762,40.826289,http://bronxboropres.nyc.gov/",
-               "Broome,City of Binghamton,60 Hawley Street,Binghamton,13902,County Executive's Office,(607)778-2109,-75.910706,42.096682,http://www.gobroomecounty.com/",
-               "Cattaraugus,Village of Little Valley,303 Court St.,Little Valley,14755,County Administrator's Office,(716)938-2577,-78.800525,42.252109,http://www.cattco.org/",
-               "Cayuga,City of Auburn,160 Genesee St.,Auburn,13021,County Administrator's Office,(315)253-1525,-76.569546,42.929717,http://www.co.cayuga.ny.us/",
-               "Chautauqua,Village of Mayville,3 North Erie Street,Mayville,14757,County Executive's Office,(716)753-7111,-79.504908,42.254671,http://www.co.chautauqua.ny.us/pages/default.aspx",
-               "Chemung,City of Elmira,203 Lake St.,Elmira,14902,County Executive's Office,(607)737-2912,-76.802081,42.089989,http://www.chemungcounty.com/",
-               "Chenango,City of Norwich,5 Court St.,Norwich,13815,County Clerk's Office,(607)337-1450,-75.526183,42.531930,http://www.co.chenango.ny.us/",
-               "Clinton,City of Plattsburgh,137 Margaret St.,Plattsburgh,12901,County Administrator's Office,(518)565-4600,-73.453974,44.699264,http://www.clintoncountygov.com/",
-               "Columbia,City of Hudson,401 State St.,Hudson,12534,County Clerk's Office,(518)828-3339,-73.787007,42.252100,http://www.columbiacountyny.com/",
-               "Cortland,City of Cortland,60 Central Ave.,Cortland,13045,County Administrator's Office,(607)753-5048,-76.176622,42.600634,http://www.cortland-co.org/",
-               "Delaware,Village of Delhi,111 Main St.,Delhi,13753,County Clerk's Office,(607)746-2123,-74.916077,42.277543,http://www.co.delaware.ny.us/index.htm",
-               "Dutchess,City of Poughkeepsie,22 Market St., 6Th Floor,Poughkeepsie,12601,County Executive's Office,(845)486-2100,-73.929549,41.703563,http://dutchessny.gov/",
-               "Erie,City of Buffalo,95 Franklin St.,Buffalo,14202,County Executive's Office,(716)858-7450,-78.876714,42.883903,http://www2.erie.gov/",
-               "Essex,Hamlet of Elizabethtown,7551 Court St., P.O. Box 217,Elizabethtown,12932,County Manager's Office,(518)873-3333,-73.594344,44.214902,http://www.co.essex.ny.us/",
-               "Franklin,Village of Malone,355 W. Main St.,Malone,12953,County Manager's Office,(518)481-1693,-74.295309,44.848998,http://franklincony.org/content"
+               "Broome,City of Binghamton,60 Hawley Street,Binghamton,13902,BusinessContract Executive's Office,(607)778-2109,-75.910706,42.096682,http://www.gobroomecounty.com/",
+               "Cattaraugus,Village of Little Valley,303 Court St.,Little Valley,14755,BusinessContract Administrator's Office,(716)938-2577,-78.800525,42.252109,http://www.cattco.org/",
+               "Cayuga,City of Auburn,160 Genesee St.,Auburn,13021,BusinessContract Administrator's Office,(315)253-1525,-76.569546,42.929717,http://www.co.cayuga.ny.us/",
+               "Chautauqua,Village of Mayville,3 North Erie Street,Mayville,14757,BusinessContract Executive's Office,(716)753-7111,-79.504908,42.254671,http://www.co.chautauqua.ny.us/pages/default.aspx",
+               "Chemung,City of Elmira,203 Lake St.,Elmira,14902,BusinessContract Executive's Office,(607)737-2912,-76.802081,42.089989,http://www.chemungcounty.com/",
+               "Chenango,City of Norwich,5 Court St.,Norwich,13815,BusinessContract Clerk's Office,(607)337-1450,-75.526183,42.531930,http://www.co.chenango.ny.us/",
+               "Clinton,City of Plattsburgh,137 Margaret St.,Plattsburgh,12901,BusinessContract Administrator's Office,(518)565-4600,-73.453974,44.699264,http://www.clintoncountygov.com/",
+               "Columbia,City of Hudson,401 State St.,Hudson,12534,BusinessContract Clerk's Office,(518)828-3339,-73.787007,42.252100,http://www.columbiacountyny.com/",
+               "Cortland,City of Cortland,60 Central Ave.,Cortland,13045,BusinessContract Administrator's Office,(607)753-5048,-76.176622,42.600634,http://www.cortland-co.org/",
+               "Delaware,Village of Delhi,111 Main St.,Delhi,13753,BusinessContract Clerk's Office,(607)746-2123,-74.916077,42.277543,http://www.co.delaware.ny.us/index.htm",
+               "Dutchess,City of Poughkeepsie,22 Market St., 6Th Floor,Poughkeepsie,12601,BusinessContract Executive's Office,(845)486-2100,-73.929549,41.703563,http://dutchessny.gov/",
+               "Erie,City of Buffalo,95 Franklin St.,Buffalo,14202,BusinessContract Executive's Office,(716)858-7450,-78.876714,42.883903,http://www2.erie.gov/",
+               "Essex,Hamlet of Elizabethtown,7551 Court St., P.O. Box 217,Elizabethtown,12932,BusinessContract Manager's Office,(518)873-3333,-73.594344,44.214902,http://www.co.essex.ny.us/",
+               "Franklin,Village of Malone,355 W. Main St.,Malone,12953,BusinessContract Manager's Office,(518)481-1693,-74.295309,44.848998,http://franklincony.org/content"
        };
 
         public String county;
@@ -127,7 +127,7 @@ public class DummyContent {
             DOS ID                  : 4734897
             Current Entity Name     : RIVERFRONT DOULA LLC
             Initial DOS Filing Date : 03/31/2015
-            County                  : DUTCHESS
+            BusinessContract                  : DUTCHESS
             Jurisdiction            : NEW YORK
             Entity Type             : DOMESTIC LIMITED LIABILITY COMPANY
             DOS Process Name        : JENNIFER BREDIN
@@ -325,7 +325,7 @@ public class DummyContent {
         },
         longitude: "-73.7539594378",
         latitude: "42.6501637986",
-        contact_type: "County Executive's Office",
+        contact_type: "BusinessContract Executive's Office",
         county_seat: "City of Albany",
         city: "Albany"
     },
@@ -341,7 +341,7 @@ public class DummyContent {
         },
         county: "Albany",
         swis_code: "10000",
-        type: "County",
+        type: "BusinessContract",
         gnis_id: "974099",
         type_code: "1"
     },
@@ -349,7 +349,7 @@ public class DummyContent {
 
     =======================================================
     Data item from: https://data.ny.gov/resource/y6cw-5z7p.json?$limit=2000&$offset=0
-    Towns, Cities and Villages by County (302)
+    Towns, Cities and Villages by BusinessContract (302)
     {
         county: "Albany",
         count_municipality: "10",

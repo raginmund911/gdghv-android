@@ -57,7 +57,7 @@
         -->
         <provider
             android:name=".data.BusinessProvider"
-            android:authorities="io.github.nitya.datahv.business"
+            android:authorities="io.github.nitya.datahv.app"
             android:enabled="true"
             android:exported="false" >
         </provider>
