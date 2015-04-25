@@ -2,20 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.nitya.datahv" >
 
+    <!-- This permission is necessary in order to perform network access. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissions required by the sync adapter -->
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!-- Main Activity -->
         <activity
             android:name=".BusinessListActivity"
             android:label="@string/app_name" >
+            <!-- android:theme="@style/BusinessTheme" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Detail Activity -->
         <activity
             android:name=".BusinessDetailActivity"
             android:label="@string/title_business_detail"
@@ -25,21 +40,27 @@
                 android:value=".BusinessListActivity" />
         </activity>
 
-        <provider
-            android:name=".data.BusinessProvider"
-            android:authorities="io.github.nitya.datahv.business"
-            android:enabled="true"
-            android:exported="true" >
-        </provider>
-
+        <!-- Settings Activity -->
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
             android:parentActivityName=".BusinessListActivity" >
+            <!-- android:theme="@style/SettingsTheme" -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.nitya.datahv.BusinessListActivity" />
+                android:value=".BusinessListActivity" />
         </activity>
+
+        <!-- Business Data Provider
+            (not exported for others use)
+            (enabled for instantiation by system)
+        -->
+        <provider
+            android:name=".data.BusinessProvider"
+            android:authorities="io.github.nitya.datahv.business"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
     </application>
 
 </manifest>

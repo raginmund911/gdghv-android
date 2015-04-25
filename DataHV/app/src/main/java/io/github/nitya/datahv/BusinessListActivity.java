@@ -2,7 +2,7 @@ package io.github.nitya.datahv;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
 
 
 /**
@@ -21,7 +21,7 @@ import android.support.v4.app.FragmentActivity;
  * {@link BusinessListFragment.Callbacks} interface
  * to listen for item selections.
  */
-public class BusinessListActivity extends FragmentActivity
+public class BusinessListActivity extends ActionBarActivity
         implements BusinessListFragment.Callbacks {
 
     /**
